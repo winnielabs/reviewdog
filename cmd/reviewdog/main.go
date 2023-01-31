@@ -33,7 +33,6 @@ import (
 	bbservice "github.com/reviewdog/reviewdog/service/bitbucket"
 	gerritservice "github.com/reviewdog/reviewdog/service/gerrit"
 	githubservice "github.com/reviewdog/reviewdog/service/github"
-	"github.com/reviewdog/reviewdog/service/github/githubutils"
 	gitlabservice "github.com/reviewdog/reviewdog/service/gitlab"
 )
 
