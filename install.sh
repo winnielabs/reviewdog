@@ -353,7 +353,7 @@ End of functions from https://github.com/client9/shlib
 EOF
 
 PROJECT_NAME="reviewdog"
-OWNER=reviewdog
+OWNER=winnielabs
 REPO="reviewdog"
 BINARY=reviewdog
 FORMAT=tar.gz
