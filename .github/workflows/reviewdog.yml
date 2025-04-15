@@ -172,7 +172,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: reviewdog/action-golangci-lint@v2
+      - uses: reviewdog/action-golangci-lint@3dfdce20f5ca12d264c214abb993dbb40834da90 # v2.7.2
         with:
           github_token: ${{ secrets.github_token }}
           golangci_lint_flags: "--enable-all --exclude-use-default=false -D wsl -D testpackage"
@@ -193,7 +193,7 @@ jobs:
         with:
           go-version: '1.x'
           cache: true
-      - uses: reviewdog/action-staticcheck@v1
+      - uses: reviewdog/action-staticcheck@73cfd0daa6fdbba9a858dcb0f62844012fa8317d # v1.27.0
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
@@ -206,7 +206,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: reviewdog/action-misspell@v1
+      - uses: reviewdog/action-misspell@9daa94af4357dddb6fd3775de806bc0a8e98d3e4 # v1.26.3
         with:
           github_token: ${{ secrets.github_token }}
           locale: "US"
@@ -217,7 +217,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: reviewdog/action-languagetool@v1
+      - uses: reviewdog/action-languagetool@ea19c757470ce0dbfcbc34aec090317cef1ff0b5 # v1.22.0
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
@@ -232,7 +232,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: reviewdog/action-shellcheck@v1
+      - uses: reviewdog/action-shellcheck@5ebd09ddbe2ebb471646ce234c6c8dd18663ca7c # v1.30.0
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
@@ -242,7 +242,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: reviewdog/action-alex@v1
+      - uses: reviewdog/action-alex@6083b8ca333981fa617c6828c5d8fb21b13d916b # v1.16.0
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
@@ -253,7 +253,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: reviewdog/action-setup@v1
+      - uses: reviewdog/action-setup@e04ffabe3898a0af8d0fb1af00c188831c4b5893 # v1.3.2
       - run: npm install
       - name: textlint
         env:
